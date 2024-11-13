@@ -17,25 +17,37 @@ body>div:first-child {
     background-size: cover;
 }
 
+input:focus {
+    border-color: lightblue;
+}
+
+.login-inputs input:hover {
+    border: 1px solid orange;
+}
+
+.login-inputs input:invalid {
+    border: 1px solid red;
+}
+
 .banner {
     flex-direction: column;
     justify-content: stretch;
 }
 
 .sticker {
-    margin-top:150px;
+    margin-top: 160px;
     height: 150px;
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.552);
 }
 
-.sticker > div {
+.sticker>div {
     height: 150px;
     width: 110px;
 }
 
-.sticker > div img {
+.sticker>div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -56,7 +68,7 @@ body>div:first-child {
     height: 100vh;
 }
 
-.signup-panel > div {
+.signup-panel>div {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -77,19 +89,17 @@ p {
     font-size: 26px;
 }
 
-.login-form > div {
+.login-form div {
     flex-grow: 1;
 }
 
-.login-inputs {
+form {
     display: flex;
 }
 
-.login-inputs > div {
+form div {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-right: 64px;
 }
 
 .login-inputs label {
@@ -122,4 +132,10 @@ button {
     margin-top: 32px;
     font-weight: 400;
     font-size: 1rem;
+}
+
+.action a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
 }
